@@ -37,12 +37,13 @@ main {
 }
 
 .content {
-    flex: 2;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .gallery {
-    flex: 1;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;;
 }
 
 .gallery img {
