@@ -32,14 +32,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
-    display: flex;
-}
-
-.content {
-    flex: 2;
-}
-
 .gallery {
     display: flex;
     justify-content: space-around;
@@ -52,6 +44,14 @@ main {
 .gallery img {
     width: 45%; /* Ширина каждой фотографии */
     margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+}
+
+.content {
+    width: 100%;
 }
 
 footer {
