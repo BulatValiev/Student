@@ -34,6 +34,7 @@ nav ul li a {
 
 main {
     display: flex;
+    flex-direction: column;
 }
 
 .content {
@@ -46,8 +47,8 @@ main {
 }
 
 .gallery img {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 25%;
+    margin: 5px;
 }
 
 footer {
