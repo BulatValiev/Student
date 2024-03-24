@@ -4,91 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Обратная связь</title>
-  <style>
-    body {
-      font-family: sans-serif;
-    }
-
-    header {
-      background-color: #000;
-      color: #fff;
-      padding: 10px;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    nav {
-      background-color: #eee;
-      padding: 10px;
-    }
-
-    footer {
-      background-color: #000;
-      color: #fff;
-      padding: 10px;
-    }
-
-    h1 {
-      margin-bottom: 10px;
-    }
-
-    p {
-      margin-bottom: 10px;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 5px;
-      border: 1px solid #ccc;
-    }
-
-    button {
-      background-color: #000;
-      color: #fff;
-      padding: 10px;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header id="header">
     <h1>Обратная связь</h1>
   </header>
 
-  <main>
-    <section>
+  <main id="main">
+    <section id="contact-form">
       <h2>Напишите нам</h2>
       <p>Если у вас есть какие-либо вопросы или предложения, пожалуйста, заполните форму ниже.</p>
       <form action="#">
         <label for="name">Ваше имя</label>
-        <input type="text" id="name" required>
+        <input type="text" id="name" required style="width: 100%; padding: 5px; border: 1px solid #ccc;">
 
         <label for="email">Ваш email</label>
-        <input type="email" id="email" required>
+        <input type="email" id="email" required style="width: 100%; padding: 5px; border: 1px solid #ccc;">
 
         <label for="message">Ваше сообщение</label>
-        <textarea id="message" rows="5" required></textarea>
+        <textarea id="message" rows="5" required style="width: 100%; padding: 5px; border: 1px solid #ccc;"></textarea>
 
-        <button type="submit">Отправить</button>
+        <button type="submit" style="background-color: #000; color: #fff; padding: 10px; border: none; cursor: pointer;">Отправить</button>
       </form>
     </section>
   </main>
 
-  <nav>
+  <nav id="nav">
     <ul>
       <li><a href="#">Главная</a></li>
       <li><a href="#">О ВШЭ</a></li>
@@ -98,7 +40,7 @@
     </ul>
   </nav>
 
-  <footer>
+  <footer id="footer">
     <p>Copyright &copy; 2023 Высшая школа экономики</p>
   </footer>
 </body>
