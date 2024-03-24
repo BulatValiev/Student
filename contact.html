@@ -1,47 +1,105 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Обратная связь</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    h1, h2 {
-        color: #007bff !important; /* Изменяем цвет заголовков на синий с помощью !important */
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Обратная связь</title>
+  <style>
+    body {
+      font-family: sans-serif;
     }
-    </style>
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    nav {
+      background-color: #eee;
+      padding: 10px;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Обратная связь</h1>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="contact.html">Обратная связь</a></li>
-        </ul>
-    </nav>
-    
-    <main>
-        <section>
-            <h2>Свяжитесь с нами</h2>
-            <form action="#" method="post">
-                <label for="name">Имя:</label><br>
-                <input type="text" id="name" name="name"><br><br>
-                
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
-                
-                <label for="message">Сообщение:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-                
-                <input type="submit" value="Отправить">
-            </form>
-        </section>
-    </main>
+  <header>
+    <h1>Обратная связь</h1>
+  </header>
 
-    <footer>
-        <p>&copy; 2024 Я - студент ВШЭ</p>
-    </footer>
+  <main>
+    <section>
+      <h2>Напишите нам</h2>
+      <p>Если у вас есть какие-либо вопросы или предложения, пожалуйста, заполните форму ниже.</p>
+      <form action="#">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Ваш email</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Ваше сообщение</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <nav>
+    <ul>
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">О ВШЭ</a></li>
+      <li><a href="#">Образовательные программы</a></li>
+      <li><a href="#">Студенческая жизнь</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <footer>
+    <p>Copyright &copy; 2023 Высшая школа экономики</p>
+  </footer>
 </body>
 </html>
