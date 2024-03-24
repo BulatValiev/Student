@@ -43,11 +43,7 @@ main {
 
 .gallery {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
-    text-align: center;
-    width: 100%; /* Ширина контейнера на 100% 
 }
 
 .gallery img {
