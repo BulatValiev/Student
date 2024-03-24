@@ -34,26 +34,12 @@ nav ul li a {
 
 .gallery {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 100%; /* Ширина контейнера на 100% */
-}
-
-.gallery img {
-    width: 45%; /* Ширина каждой фотографии */
-    margin-bottom: 10px;
-}
-
-main {
-    display: flex;
+    justify-content: space-between;
 }
 
 .content {
     width: 100%;
 }
-
 footer {
     text-align: center;
     clear: both;
