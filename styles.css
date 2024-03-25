@@ -16,11 +16,6 @@ header, footer {
     color: #fff;
 }
 
-.title img {
-    width: 150px; /* Устанавливаем ширину логотипа */
-    margin-left: 10px; /* Добавляем небольшой отступ слева от логотипа */
-}
-
 nav ul {
     list-style-type: none;
     margin: 0;
