@@ -177,6 +177,14 @@ footer p {
     order: 1; /* Изменим порядок отображения на маленьких экранах */
 }
 
+
+/* Добавим стили для ссылки на телеграм в обо мне */
+.telegram-link {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* Изменения в разделе обо мне для выравнивания текста и фотографии */
 #about {
     display: flex;
@@ -191,6 +199,94 @@ footer p {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+#chat-container {
+    max-width: 100%;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+#chat-messages {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #444;
+}
+
+#message-input {
+    width: calc(100% - 40px);
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #555;
+    color: #fff;
+}
+
+#send-button {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#record-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#play-button.disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+#stop-record-button {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#stop-record-button.disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+#recording-indicator {
+    color: #dc3545;
+    margin-bottom: 10px;
+}
+
+#play-button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#play-button:hover {
+    background-color: #45a049;
 }
 
 .main-menu {
