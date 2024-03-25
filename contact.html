@@ -2,43 +2,42 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Контакты</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-    h1, h2 {
-        color: #007bff !important; /* Изменяем цвет заголовков на синий с помощью !important */
-    }
+        label {
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Контакты</h1>
+        <h1>Форма обратной связи</h1>
     </header>
-    
     <nav>
         <ul>
             <li><a href="index.html">Главная</a></li>
+            <li><a href="feedback.html">Обратная связь</a></li>
         </ul>
     </nav>
-    
     <main>
         <section>
             <h2>Свяжитесь с нами</h2>
-            <form action="#" method="post">
-                <label for="name">Имя:</label><br>
-                <input type="text" id="name" name="name"><br><br>
+            <form>
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
                 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
                 
-                <label for="message">Сообщение:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
                 
-                <input type="submit" value="Отправить">
+                <button type="submit">Отправить</button>
             </form>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2024 Я - студент ВШЭ</p>
     </footer>
