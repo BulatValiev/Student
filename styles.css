@@ -16,12 +16,6 @@ header, footer {
     color: #fff;
 }
 
-.title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 nav ul {
     list-style-type: none;
     margin: 0;
