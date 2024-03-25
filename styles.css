@@ -16,14 +16,10 @@ header, footer {
     color: #fff;
 }
 
-.title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    width: 50px; /* Устанавливаем ширину логотипа */
+.title img {
+    width: 100px; /* Желаемая ширина в 5 раз меньше оригинала */
+    height: 100px; /* Желаемая высота в 5 раз меньше оригинала */
+    margin-left: 10px; /* Добавляем отступ слева от логотипа */
 }
 
 nav ul {
