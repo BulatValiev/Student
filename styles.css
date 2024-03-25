@@ -16,18 +16,6 @@ header, footer {
     color: #fff;
 }
 
-.title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.title img {
-    width: 500px; /* Желаемая ширина в 2 раза меньше оригинала */
-    height: 75px; /* Желаемая высота в 2 раза меньше оригинала */
-    margin-left: 10px; /* Добавляем отступ слева от логотипа */
-}
-
 nav ul {
     list-style-type: none;
     margin: 0;
