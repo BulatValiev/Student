@@ -20,3 +20,11 @@ messageForm.addEventListener('submit', function(event) {
         messageInput.value = '';
     }
 });
+
+window.onload = function() {
+    // Инициализация карты Leaflet
+    var map = L.map('map', { attributionControl: false }).setView([55.7558, 37.6173], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+    }).addTo(map);
+};
