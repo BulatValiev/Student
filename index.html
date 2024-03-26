@@ -21,6 +21,7 @@
             padding: 10px;
         }
     </style>
+    <link rel="stylesheet" href="leaflet.css">
 </head>
 <body>
     <header>
@@ -75,6 +76,17 @@
                 <img src="photo.jpg" alt="Это я">
             </div>
     </section>
+
+    <div id="map"></div>
+    <script src="leaflet.js"></script>
+
+    <div id="chat">
+       <ul id="messages"></ul>
+       <form id="messageForm">
+           <input type="text" id="messageInput" placeholder="Введите сообщение">
+           <button type="submit">Отправить</button>
+       </form>
+    </div>
     
     <footer>
         <p>&copy; 2024 Я - студент ВШЭ</p>
