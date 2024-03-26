@@ -107,5 +107,33 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+     <script>
+        const messageForm = document.getElementById('messageForm');
+        const messageInput = document.getElementById('messageInput');
+        const messages = document.getElementById('messages');
+
+        messageForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const message = messageInput.value.trim();
+            if (message) {
+                const li = document.createElement('li');
+                li.textContent = message;
+                messages.appendChild(li);
+                messageInput.value = '';
+
+                // Отправляем сообщение на сервер
+                axios.post('/sendMessage', { message: message })
+                    .then(function (response) {
+                        console.log('Сообщение успешно отправлено');
+                    })
+                    .catch(function (error) {
+                        console.error('Ошибка отправки сообщения', error);
+                    });
+            }
+        });
+    </script>
+    
 </body>
 </html>
