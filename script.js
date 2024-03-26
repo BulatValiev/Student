@@ -27,4 +27,8 @@ window.onload = function() {
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
     }).addTo(map);
+    
+    var marker1 = L.marker([51.5, -0.09]).addTo(map);
+    marker1.bindPopup("<b>Привет! </b><br>Я, увы, не здесь.").openPopup();
+    
 };
