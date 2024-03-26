@@ -92,11 +92,12 @@
    
     <script src="leaflet.js"></script>
 
-    <div id="chat-container">
-        <div id="chat-messages"></div>
-        <textarea id="user-input" placeholder="Введите ваше сообщение..."></textarea>
-        <button id="send-button">Отправить</button>
-        <button id="voice-button">Голосовой ввод</button>
+   <div id="chat">
+       <ul id="messages"></ul>
+       <form id="messageForm">
+           <input type="text" id="messageInput" placeholder="Введите сообщение">
+           <button type="submit">Отправить</button>
+       </form>
     </div>
     
     <footer>
