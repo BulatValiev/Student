@@ -1,5 +1,4 @@
 /* Общие стили для всех страниц */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -17,8 +16,8 @@ header, footer {
 }
 
 .title img {
-    width: 50px; /* Устанавливаем ширину логотипа */
-    margin-left: 10px; /* Добавляем небольшой отступ слева от логотипа */
+    width: 100px; /* Увеличиваем ширину логотипа */
+    margin-left: 10px;
 }
 
 nav ul {
@@ -35,6 +34,11 @@ nav ul li {
 nav ul li a {
     color: #0b15cd;
     text-decoration: none;
+    transition: color 0.3s; /* Добавляем анимацию при изменении цвета */
+}
+
+nav ul li a:hover {
+    color: #555;
 }
 
 main {
@@ -95,6 +99,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s; /* Добавляем анимацию при наведении */
 }
 
 button:hover {
