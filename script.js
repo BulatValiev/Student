@@ -27,4 +27,23 @@ window.onload = function() {
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
     }).addTo(map);
+
+    // Генерация случайных координат
+    function getRandomCoordinates() {
+        const minLat = -90;
+        const maxLat = 90;
+        const minLng = -180;
+        const maxLng = 180;
+
+        const lat = Math.random() * (maxLat - minLat) + minLat;
+        const lng = Math.random() * (maxLng - minLng) + minLng;
+
+        return { lat, lng };
+    }
+
+    // Создание маркера на случайной точке
+    const marker = new maps.Marker({
+        position: getRandomCoordinates(),
+        map: map
+    });
 };
