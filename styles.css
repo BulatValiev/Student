@@ -21,7 +21,7 @@ header, footer {
 }
 
 .title img {
-    width: 50px; /* Уменьшаем размер логотипа вдвое */
+    width: 50px !important; /* Уменьшаем размер логотипа вдвое с использованием !important */
     margin-left: 10px;
 }
 
